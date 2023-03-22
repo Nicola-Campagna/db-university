@@ -1,7 +1,5 @@
 QUERY 1:
-SELECT * FROM `students` WHERE `date_of_birth` BETWEEN "1990-01-01" AND "1990-12-31"
-
-
+SELECT * FROM `students` WHERE YEAR(`date_of_birth`)=1990;
 QUERY 2:
 SELECT * FROM `courses` WHERE `cfu`>10;
 
